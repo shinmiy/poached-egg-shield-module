@@ -7,7 +7,7 @@
 #define LOWER 1
 #define RAISE 2
 #define ARROW 3
-#define LEFT 4
+#define MIRROR 4
 #define ADJUST 5
 
 / {
@@ -19,11 +19,11 @@
                 &kp TAB           &kp Q             &kp W             &kp E             &kp R             &kp T                                                 &kp Y             &kp U             &kp I             &kp O             &kp P             &kp MINUS
                 &kp LCTRL         &kp A             &kp S             &kp D             &kp F             &kp G                                                 &kp H             &kp J             &kp K             &kp L             &kp SEMI          &kp RET
                 &kp LSHFT         &kp Z             &kp X             &kp C             &kp V             &kp B                                                 &kp N             &kp M             &kp COMMA         &kp DOT           &kp FSLH          &kp INT_RO
-                &kp ESC           &kp LALT          &kp LGUI          &mo ARROW         &mo LOWER         &mo LEFT          &kp LANG2         &kp LANG1         &kp SPACE         &mo RAISE         &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT
+                &kp ESC           &kp LALT          &kp LGUI          &mo ARROW         &mo LOWER         &mo MIRROR        &kp LANG2         &kp LANG1         &kp SPACE         &mo RAISE         &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT
             >;
         };
 
-        lower_layer {
+        lower_layer: LOWER {
             bindings = <
                 &kp GRAVE         &kp EXCL          &kp AT            &kp HASH          &kp DOLLAR        &kp PRCNT                                             &kp CARET         &kp AMPS          &kp ASTRK         &kp LPAR          &kp RPAR          &kp DEL
                 &kp GRAVE         &kp EXCL          &kp AT            &kp HASH          &kp DOLLAR        &kp PRCNT                                             &kp CARET         &kp AMPS          &kp ASTRK         &kp LPAR          &kp RPAR          &trans
@@ -32,7 +32,7 @@
             >;
         };
 
-        raise_layer {
+        raise_layer: RAISE {
             bindings = <
                 &trans            &trans            &mkp LCLK         &mkp MCLK         &mkp RCLK         &trans                                                &trans            &msc SCRL_DOWN    &msc SCRL_UP      &mkp MB4          &mkp MB5          &kp DEL
                 &trans            &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP      &mmv MOVE_RIGHT   &trans                                                &trans            &mkp LCLK         &mkp MCLK         &mkp RCLK         &trans            &trans
@@ -41,7 +41,7 @@
             >;
         };
 
-        arrow_layer {
+        arrow_layer: ARROW {
             bindings = <
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
                 &trans            &trans            &kp LEFT          &kp UP            &kp DOWN          &kp RIGHT                                             &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT         &trans            &trans
@@ -50,7 +50,7 @@
             >;
         };
 
-        left_layer {
+        mirror_layer: MIRROR {
             bindings = <
                 &kp MINUS         &kp P             &kp O             &kp I             &kp U             &kp Y                                                 &trans            &kp N7            &kp N8            &kp N9            &trans            &trans
                 &kp RET           &kp SEMI          &kp L             &kp K             &kp J             &kp H                                                 &trans            &kp N4            &kp N5            &kp N6            &trans            &trans
@@ -59,7 +59,7 @@
             >;
         };
 
-        adjust_layer {
+        adjust_layer: ADJUST {
             bindings = <
                 &bt BT_CLR        &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4                                          &trans            &trans            &trans            &trans            &trans            &kp DEL
                 &trans            &sys_reset        &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
