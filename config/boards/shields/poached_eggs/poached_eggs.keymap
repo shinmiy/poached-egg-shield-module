@@ -4,11 +4,11 @@
 #include <dt-bindings/zmk/mouse.h>
 
 #define QWERTY 0
-#define LOWER 1
-#define RAISE 2
-#define ARROW 3
-#define MIRROR 4
-#define ADJUST 5
+#define L_LOWER 1
+#define L_RAISE 2
+#define L_ARROW 3
+#define L_MIRROR 4
+#define L_ADJUST 5
 
 / {
     keymap {
@@ -19,11 +19,11 @@
                 &kp TAB           &kp Q             &kp W             &kp E             &kp R             &kp T                                                 &kp Y             &kp U             &kp I             &kp O             &kp P             &kp MINUS
                 &kp LCTRL         &kp A             &kp S             &kp D             &kp F             &kp G                                                 &kp H             &kp J             &kp K             &kp L             &kp SEMI          &kp RET
                 &kp LSHFT         &kp Z             &kp X             &kp C             &kp V             &kp B                                                 &kp N             &kp M             &kp COMMA         &kp DOT           &kp FSLH          &kp INT_RO
-                &kp ESC           &kp LALT          &kp LGUI          &mo ARROW         &mo LOWER         &mo MIRROR        &kp LANG2         &kp LANG1         &kp SPACE         &mo RAISE         &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT
+                &kp ESC           &kp LALT          &kp LGUI          &mo L_ARROW       &mo L_LOWER       &mo L_MIRROR      &kp LANG2         &kp LANG1         &kp SPACE         &mo L_RAISE       &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT
             >;
         };
 
-        lower_layer: LOWER {
+        lower_layer {
             bindings = <
                 &trans            &kp A             &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
@@ -32,7 +32,7 @@
             >;
         };
 
-        raise_layer: RAISE {
+        raise_layer {
             bindings = <
                 &trans            &kp B             &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
@@ -41,7 +41,7 @@
             >;
         };
 
-        arrow_layer: ARROW {
+        arrow_layer {
             bindings = <
                 &trans            &kp C             &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
@@ -50,7 +50,7 @@
             >;
         };
 
-        mirror_layer: MIRROR {
+        mirror_layer {
             bindings = <
                 &kp MINUS         &kp A             &kp O             &kp I             &kp U             &kp Y                                                 &trans            &kp N7            &kp N8            &kp N9            &trans            &trans
                 &kp RET           &kp SEMI          &kp L             &kp K             &kp J             &kp H                                                 &trans            &kp N4            &kp N5            &kp N6            &trans            &trans
@@ -59,7 +59,7 @@
             >;
         };
 
-        adjust_layer: ADJUST {
+        adjust_layer {
             bindings = <
                 &bt BT_CLR        &bt BT_SEL 0      &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4                                          &trans            &trans            &trans            &trans            &trans            &kp DEL
                 &trans            &sys_reset        &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
