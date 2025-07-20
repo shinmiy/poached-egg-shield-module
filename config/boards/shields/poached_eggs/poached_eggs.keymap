@@ -11,22 +11,6 @@
 #define ADJUST 5
 
 / {
-    behaviors {
-        td_low_adj: tap_dance_lower_adjust {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo LOWER>, <&mo ADJUST>;
-        };
-
-        td_rse_adj: tap_dance_raise_adjust {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo RAISE>, <&mo ADJUST>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -35,7 +19,7 @@
                 &kp TAB           &kp Q             &kp W             &kp E             &kp R             &kp T                                                 &kp Y             &kp U             &kp I             &kp O             &kp P             &kp MINUS
                 &kp LCTRL         &kp A             &kp S             &kp D             &kp F             &kp G                                                 &kp H             &kp J             &kp K             &kp L             &kp SEMI          &kp RET
                 &kp LSHFT         &kp Z             &kp X             &kp C             &kp V             &kp B                                                 &kp N             &kp M             &kp COMMA         &kp DOT           &kp FSLH          &kp INT_RO
-                &kp ESC           &kp LALT          &kp LGUI          &mo ARROW         &td_low_adj       &mo LEFT          &kp LANG2         &kp LANG1         &kp SPACE         &td_rse_adj       &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT
+                &kp ESC           &kp LALT          &kp LGUI          &mo ARROW         &mo LOWER         &mo LEFT          &kp LANG2         &kp LANG1         &kp SPACE         &mo RAISE         &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT
             >;
         };
 
@@ -44,7 +28,7 @@
                 &kp GRAVE         &kp EXCL          &kp AT            &kp HASH          &kp DOLLAR        &kp PRCNT                                             &kp CARET         &kp AMPS          &kp ASTRK         &kp LPAR          &kp RPAR          &kp DEL
                 &kp GRAVE         &kp EXCL          &kp AT            &kp HASH          &kp DOLLAR        &kp PRCNT                                             &kp CARET         &kp AMPS          &kp ASTRK         &kp LPAR          &kp RPAR          &trans
                 &trans            &kp HOME          &trans            &kp END           &trans            &trans                                                &trans            &trans            &kp AT            &kp LBKT          &kp RBKT          &kp PIPE
-                &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &kp C_VOL_DN      &kp C_VOL_UP
+                &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &mo ADJUST        &trans            &trans            &kp C_VOL_DN      &kp C_VOL_UP
             >;
         };
 
@@ -53,7 +37,7 @@
                 &trans            &trans            &mkp LCLK         &mkp MCLK         &mkp RCLK         &trans                                                &trans            &msc SCRL_DOWN    &msc SCRL_UP      &mkp MB4          &mkp MB5          &kp DEL
                 &trans            &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_UP      &mmv MOVE_RIGHT   &trans                                                &trans            &mkp LCLK         &mkp MCLK         &mkp RCLK         &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
-                &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &kp C_VOL_DN      &kp C_VOL_UP      &kp C_PP
+                &trans            &trans            &trans            &trans            &mo ADJUST        &trans            &trans            &trans            &trans            &trans            &trans            &kp C_VOL_DN      &kp C_VOL_UP      &kp C_PP
             >;
         };
 
