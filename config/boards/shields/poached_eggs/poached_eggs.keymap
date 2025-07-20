@@ -16,7 +16,7 @@
 
         qwerty_layer {
             bindings = <
-                &kp TAB           &kp A             &kp W             &kp E             &kp R             &kp T                                                 &kp H             &kp U             &kp I             &kp O             &kp P             &kp MINUS
+                &kp TAB           &kp Q             &kp W             &kp E             &kp R             &kp T                                                 &kp Y             &kp U             &kp I             &kp O             &kp P             &kp MINUS
                 &kp LCTRL         &kp A             &kp S             &kp D             &kp F             &kp G                                                 &kp H             &kp J             &kp K             &kp L             &kp SEMI          &kp RET
                 &kp LSHFT         &kp Z             &kp X             &kp C             &kp V             &kp B                                                 &kp N             &kp M             &kp COMMA         &kp DOT           &kp FSLH          &kp INT_RO
                 &kp ESC           &kp LALT          &kp LGUI          &mo ARROW         &mo LOWER         &mo MIRROR        &kp LANG2         &kp LANG1         &kp SPACE         &mo RAISE         &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT
