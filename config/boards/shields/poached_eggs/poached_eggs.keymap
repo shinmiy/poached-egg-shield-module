@@ -6,10 +6,10 @@
 #define L_QWERTY 0
 #define L_LOWER 1
 #define L_RAISE 2
-#define L_MOUSE 4
-#define L_ARROW 5
-#define L_MIRROR 6
-#define L_ADJUST 7
+#define L_MOUSE 3
+#define L_ARROW 4
+#define L_MIRROR 5
+#define L_ADJUST 6
 
 / {
     conditional_layers {
