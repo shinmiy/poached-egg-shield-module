@@ -11,6 +11,14 @@
 #define L_ADJUST 5
 
 / {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <L_LOWER L_RAISE>;
+            then-layer = <L_ADJUST>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
