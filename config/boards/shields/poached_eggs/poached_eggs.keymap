@@ -11,6 +11,14 @@
 #define L_MIRROR 5
 #define L_ADJUST 6
 
+#define JA_CLON SINGLE_QUOTE  // : and +
+#define JA_AT   LEFT_BRACKET  // @ and `
+#define JA_HAT  EQUAL   // ^ and ~
+#define JA_ENUN INT1  // \ and _ (EN mark and UNder score)
+#define JA_ENVL INT3  // \ and | (EN mark and Vertical Line)
+#define JA_LBRC RIGHT_BRACKET  // [ and {
+#define JA_RBRC BACKSLASH  // ] and }
+
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
@@ -27,16 +35,16 @@
             bindings = <
                 &kp TAB           &kp Q             &kp W             &kp E             &kp R             &kp T                                                 &kp Y             &kp U             &kp I             &kp O             &kp P             &kp BSPC
                 &kp LCTRL         &kp A             &kp S             &kp D             &kp F             &kp G                                                 &kp H             &kp J             &kp K             &kp L             &kp SEMI          &kp RET
-                &kp LSHFT         &kp Z             &kp X             &kp C             &kp V             &kp B                                                 &kp N             &kp M             &kp COMMA         &kp DOT           &kp FSLH          &kp INT_RO
+                &kp LSHFT         &kp Z             &kp X             &kp C             &kp V             &kp B                                                 &kp N             &kp M             &kp COMMA         &kp DOT           &kp FSLH          &kp JA_ENUN
                 &kp ESC           &kp LALT          &kp LGUI          &mo L_ARROW       &mo L_LOWER       &mo L_MIRROR      &kp LANG2         &kp LANG1         &lt L_RAISE SPACE &mo L_MOUSE       &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT
             >;
         };
 
         lower_layer {
             bindings = <
-                &trans            &kp L             &kp O             &kp W             &kp E             &kp R                                                 &trans            &kp L             &kp O             &kp W             &kp E             &kp R
-                &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
-                &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
+                &trans            &trans            &trans            &trans            &trans            &trans                                                &kp CARET         &kp AMPS          &kp ASTRK         &kp LPAR          &kp RPAR          &trans
+                &trans            &kp HOME          &kp END           &trans            &trans            &trans                                                &trans            &trans            &kp JA_AT         &kp JA_LBRC       &kp JA_RBRC       &kp JA_ENVL
+                &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &kp JA_CLON
                 &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
             >;
         };
