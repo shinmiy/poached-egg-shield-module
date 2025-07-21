@@ -46,7 +46,7 @@
                 &trans            &kp LS(N1)        &kp LS(N2)        &kp LS(N3)        &kp LS(N4)        &kp LS(N5)                                            &kp LS(N6)        &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &kp LS(N0)        &kp MINUS
                 &trans            &kp HOME          &trans            &kp END           &trans            &trans                                                &trans            &trans            &kp JA_AT         &kp JA_LBRC       &kp JA_RBRC       &kp JA_ENVL
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &kp JA_CLON
-                &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &kp C_BRI_DN      &kp C_BRI_UP      &transm
+                &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &kp C_BRI_DN      &kp C_BRI_UP      &trans
             >;
         };
 
