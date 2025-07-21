@@ -3,12 +3,13 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
 
-#define QWERTY 0
+#define L_QWERTY 0
 #define L_LOWER 1
 #define L_RAISE 2
-#define L_ARROW 3
-#define L_MIRROR 4
-#define L_ADJUST 5
+#define L_MOUSE 4
+#define L_ARROW 5
+#define L_MIRROR 6
+#define L_ADJUST 7
 
 / {
     conditional_layers {
@@ -27,13 +28,13 @@
                 &kp TAB           &kp Q             &kp W             &kp E             &kp R             &kp T                                                 &kp Y             &kp U             &kp I             &kp O             &kp P             &kp MINUS
                 &kp LCTRL         &kp A             &kp S             &kp D             &kp F             &kp G                                                 &kp H             &kp J             &kp K             &kp L             &kp SEMI          &kp RET
                 &kp LSHFT         &kp Z             &kp X             &kp C             &kp V             &kp B                                                 &kp N             &kp M             &kp COMMA         &kp DOT           &kp FSLH          &kp INT_RO
-                &kp ESC           &kp LALT          &kp LGUI          &mo L_ARROW       &mo L_LOWER       &mo L_MIRROR      &kp LANG2         &kp LANG1         &kp SPACE         &mo L_RAISE       &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT
+                &kp ESC           &kp LALT          &kp LGUI          &mo L_ARROW       &mo L_LOWER       &mo L_MIRROR      &kp LANG2         &kp LANG1         &lt L_MOUSE SPACE &mo L_RAISE       &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT
             >;
         };
 
         lower_layer {
             bindings = <
-                &trans            &kp A             &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
+                &trans            &kp L             &kp O             &kp W             &kp E             &kp R                                                 &trans            &kp L             &kp O             &kp W             &kp E             &kp R
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
@@ -42,7 +43,16 @@
 
         raise_layer {
             bindings = <
-                &trans            &kp B             &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
+                &trans            &kp R             &kp A             &kp I             &kp S             &kp E                                                 &trans            &kp R             &kp A             &kp I             &kp S             &kp E
+                &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
+                &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
+                &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
+            >;
+        };
+
+        mouse_layer {
+            bindings = <
+                &trans            &kp M             &kp O             &kp U             &kp S             &kp E                                                 &trans            &kp M             &kp O             &kp U             &kp S             &kp E
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
@@ -51,7 +61,7 @@
 
         arrow_layer {
             bindings = <
-                &trans            &kp C             &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
+                &trans            &kp A             &kp R             &kp R             &kp O             &kp W                                                 &trans            &kp A             &kp R             &kp R             &kp O             &kp W
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
