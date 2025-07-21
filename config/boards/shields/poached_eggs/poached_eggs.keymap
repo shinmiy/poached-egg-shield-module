@@ -69,8 +69,8 @@
 
         arrow_layer {
             bindings = <
-                &trans            &kp A             &kp R             &kp R             &kp O             &kp W                                                 &trans            &kp A             &kp R             &kp R             &kp O             &kp W
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
+                &trans            &trans            &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT                                             &kp LEFT          &kp DOWN          &kp UP            &kp RIGHT         &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
             >;
