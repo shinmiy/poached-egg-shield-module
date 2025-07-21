@@ -60,8 +60,8 @@
 
         mouse_layer {
             bindings = <
-                &trans            &kp M             &kp O             &kp U             &kp S             &kp E                                                 &trans            &kp M             &kp O             &kp U             &kp S             &kp E
-                &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
+                &trans            &trans            &mmv MOVE_UP      &trans            &trans            &trans                                                &trans            &msc SCRL_DOWN    &msc SCRL_UP      &mkp MB4          &mkp MB5          &trans
+                &trans            &mmv MOVE_LEFT    &mmv MOVE_DOWN    &mmv MOVE_RIGHT   &trans            &trans                                                &trans            &mkp MB1          &mkp MB3          &mkp MB2          &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &trans            &trans            &trans            &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
             >;
