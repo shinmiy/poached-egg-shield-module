@@ -88,7 +88,7 @@
 
         shortcuts_layer {
             bindings = <
-                &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &kp LC(LA(LG(F13))) &LC(LA(LG(F14))) &LC(LA(LG(F15))) &trans            &trans
+                &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &kp LC(LA(LG(F13))) &kp LC(LA(LG(F14))) &kp LC(LA(LG(F15))) &trans      &trans
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &kp F16           &kp F17           &kp F18           &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans                                                &trans            &kp F13           &kp F14           &kp F15           &trans            &trans
                 &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans            &trans
